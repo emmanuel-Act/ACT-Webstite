@@ -1,0 +1,735 @@
+body{
+   
+    font-family: arial;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+    
+    
+    
+}
+.hero{
+    width: 100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(33, 97, 140 ,0.4),rgba(33, 97, 140 ,0.4)),url(bg-1.png) ;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    background-color:white;
+    margin-top: 20px;
+    margin-right:50px;
+    margin-left:160px;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 5;
+    
+}
+nav{
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.logo{
+    padding: 20px 0 20px 10px;
+    width: 270px;
+    height: auto;
+    vertical-align: middle;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    padding-right: 10px;
+    
+   
+
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+   
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #344767;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    
+    align-items: center !important;
+}
+nav ul ul  {
+    position: absolute;
+    display: none;
+    
+}
+nav ul li:hover > ul{
+    display: block;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    
+}
+nav ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+    
+}
+
+
+button{
+    position: relative; 
+    list-style: none;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    padding: 0 16px;
+    background-color: #0070d2;
+    border-radius: 0.50rem;
+    border: 1px solid #0070d2;
+    color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+    
+}
+.content h1{
+  letter-spacing: -0.05rem;
+  font-weight: 600;
+  font-size: 2.25rem;
+    line-height: 1.3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.type{
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #fff; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+.content h3{
+  font-size: 1.875rem;
+    line-height: 1.375;
+    letter-spacing: -0.05rem;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content p{
+  font-weight: 400;
+    line-height: 1.625;
+    text-align:center;
+    margin-top: 1.5rem;
+    padding-right: 3rem;
+    font-size: 1.25rem;
+}
+.app-button button{
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 0 16px;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 600px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+.app-button button:hover{
+  
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.801), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
+
+}
+.holder{
+  border-radius: 15px;
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+  position: relative;
+  width: 1300px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: 30px;
+  background-color: #fff;
+  margin-top: -60px;
+  box-shadow: inset 0 0px 1px 1px rgb(254 254 254 / 90%), 0 20px 27px 0 rgb(0 0 0 / 5%);
+  backdrop-filter: saturate(200%) blur(30px);
+  background-color: rgba(255, 255, 255, 0.8)
+  
+}
+
+.row{
+    display:flex;
+    flex-flow: row;
+  }
+  .card-1{
+    flex: 70%
+  }
+
+  
+
+  .card-1 h1{
+      margin-top:120px;
+      margin-left:40px;
+      color:#15246e;
+      font-weight: 600;
+      font-family: "Roboto Slab", sans-serif;
+      text-align: left;
+  }
+  .card-1 p{
+      margin-top:20px;
+      margin-left:40px;
+      line-height: 30px;
+      color:rgba(139, 139, 139, 0.733);
+      line-height: 1.625;
+      font-weight: 300;
+      font-size: 1rem;
+      text-align: left;
+  }
+  .flipping-card{
+    width: 500px;
+    height: 470px;
+    margin-left:30px;
+    margin-top:40px;
+    margin-right:60px;
+    border-radius: 10px;
+    flex-wrap:wrap;
+    
+  }
+  
+  .card-body {
+    border-radius: 5px;
+    margin-top: 30px;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+  }
+
+  .flipping-card:hover .card-body {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    background:linear-gradient(#d63384, rgba(230, 10, 127, 0.75)),url(flip-front.png);
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .back {
+    background:linear-gradient(#d63384, rgba(230, 10, 127, 0.75)),url(flip-back.png);
+    border-radius: 8px;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+.back ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+   
+}
+.back ul li a{
+    display: block;
+    text-decoration: none;
+    color: #344767;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    
+    align-items: center !important;
+}
+.back ul ul  {
+    position: absolute;
+    display: none;
+    
+}
+.back ul li:hover > ul{
+    display: block;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    
+}
+.back ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+    
+}
+
+  .flipping-card .card-body .front .icon{
+    margin-top:100px;
+
+  }
+  .flipping-card .card-body .front .icon h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .flipping-card .card-body .back h1{
+    margin-top:150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+
+  .flipping-card .card-body .front .icon p{
+    margin-top:50px;
+    line-height: 1.625;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .flipping-card .card-body .back .icon p{
+    margin-top:50px; 
+    line-height: 1.625;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .row2{
+    display:flex;
+    flex-flow: row;
+  }
+  .column {
+	  flex: 33.33%;
+	  height: 100%;
+	  padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+	}
+
+  .row2 img{
+    width: 310px;
+    height: 316px;
+    border-radius: 10px;
+  }
+
+  .row2 h1{
+    margin-top:20px;
+    text-align: left;
+    font-weight: 600;
+    font-family: "Roboto Slab", sans-serif;
+    margin-left: 30px;
+    font-size: 1.25rem;
+    line-height: 1.375;
+    color: #344767;
+  }
+  .row2 p{
+    margin-top:0px;
+    margin-left:30px;
+    line-height: 30px;
+    color:rgba(139, 139, 139, 0.733);
+    line-height: 1.625;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .row2 a{
+    text-decoration: none;
+  }
+
+  .card1, .card2, .calendar{
+    width: 400px;
+
+    margin-top:50px;
+    border-radius: 100px;
+    flex-wrap:wrap;
+  }
+
+  .column .calendar a{
+    letter-spacing: 0rem;
+    color: #344767;
+    text-decoration: none;
+}
+  .row2 h4{
+    font-size: 1.5rem;
+    line-height: 1.375;
+    letter-spacing: -0.05rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--bs-heading-color);
+  }
+  .column .calendar a h6{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.625;
+    margin-left: 20px;
+  }
+
+  .cardbody{
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 70px;
+    padding: 0;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .column .calendar{
+    margin-left: 40px;
+    margin-top: 80px;
+    text-align: left;
+  }
+
+  .row3{
+    display:flex;
+    flex-flow: row;
+  }
+  .row3 .column {
+	  flex: 25%;
+	  height: 100%;
+	  padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+  }
+  .clients{
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+  .clients2{
+    margin-left: 450px;
+    margin-right: 500px;
+  }
+
+  .row4{
+    display:flex;
+    flex-flow: row;
+  }
+  .row4 .column {
+	  flex: 33.33%;
+	  height: 100%;
+	  padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+  }
+
+  .row-1, .row-2, .row-3, .row-4, .row-5{
+    display:flex;
+    flex-flow: row;
+  }
+
+  .row-1 p{
+      margin-top: -20px;
+      color:rgba(139, 139, 139, 0.733);
+      line-height: 1.625;
+      font-weight: 300;
+      font-size: 1rem;
+      margin-left: 40px;
+  }
+  .row-2 p{
+    margin-top: -20px;
+    color:rgba(139, 139, 139, 0.733);
+    line-height: 1.625;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-left: 90px;
+  }
+  .row-3 p{
+    margin-top: -20px;
+    color:rgba(139, 139, 139, 0.733);
+    line-height: 1.625;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-left: 40px;
+}
+.row-4 p{
+  margin-top: -20px;
+  color:rgba(139, 139, 139, 0.733);
+  line-height: 1.625;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-left: 90px;
+}
+.row-5 p{
+  margin-top: -20px;
+  color:rgba(139, 139, 139, 0.733);
+  line-height: 1.625;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-left: 40px;
+}
+
+  .img1, .img3, .img5{
+    border-radius: 5px;
+    position: relative;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 90px;
+    margin-top: 40px;
+  }
+
+  .img2, .img4 {
+    border-radius: 5px;
+    position: relative;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 38px;
+    margin-top: 40px;
+  }
+  footer{
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-bottom: 80px;
+    height: 200px;
+  }
+
+  .foot-row{
+    display:flex;
+    flex-flow: row;
+  }
+  .foot-col{
+    flex: 16.25%;
+	  height: 100%;
+    margin-left: -50px;
+	  
+  }
+  .foot-col1{
+    flex: 35%;
+    height: 100%;
+    margin-right: -170px;
+  }
+
+  .foot-row h5{
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.625;
+    color: #344767;
+    text-align: left;
+    margin-bottom: -10px;
+  }
+  .foot-row h6{
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #344767;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+
+  .foot-row ul li{
+    list-style: none;
+    text-align: left;
+    margin-left: 35px;
+    padding-bottom: 5px;
+  }
+.foot-row ul li a{
+  text-decoration: none;
+  color: #344767;
+  font-weight: 400;
+  font-size: 0.875rem;
+  
+}
+.links{
+  margin-top: 10px;
+}
+.links a{
+  font-size: 1.125rem;
+  font-family: "Font Awesome 5 Brands";
+  color: #344767;
+  margin-right: 20px;
+}
+ .copyright{
+  margin-top: 50px;
+  margin-left: 250px;
+ }
+.copyright p{
+  color: #344767;
+  line-height: 1.625;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+/*about us page*/
+.holder2{
+  border-radius: 15px;
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  position: relative;
+  width: 1300px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: 30px;
+  background-color: #fff;
+  margin-top: 30px;
+  box-shadow: inset 0 0px 1px 1px rgb(254 254 254 / 90%), 0 20px 27px 0 rgb(0 0 0 / 5%);
+  backdrop-filter: saturate(200%) blur(30px);
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+.verticalLine1 {
+  height: 220px;
+  border-left: 3px solid #344767;
+  position: absolute;
+  right: 93%;
+}
+.verticalLine2 {
+  height: 90px;
+  border-left: 3px solid #344767;
+  position: absolute;
+  right: 93%;
+}
+.verticalLine3 {
+  height: 60px;
+  border-left: 3px solid #344767;
+  position: absolute;
+  right: 93%;
+}
+
+.row-a{
+  display:flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.column-a{
+  flex: 70%;
+
+}
+
+
+
+.column-a h3{
+    
+    
+  color: #344767; 
+  letter-spacing: -0.05rem; 
+  font-weight: 800;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  font-size: 2rem;
+  line-height: 1.375; 
+  margin-top: 100px; 
+  text-align: left; 
+  margin-left: 90px;
+}
+
+.column-a p{
+    margin-top:20px;
+    margin-left:100px;
+    color:rgba(139, 139, 139, 0.733);
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-style: italic;
+}
+.column-b{
+  width: 500px;
+  height: 470px;
+  margin-left:30px;
+  margin-top:40px;
+  margin-right:60px;
+  border-radius: 10px;
+  flex-wrap:wrap;
+  
+}
+
+.about-img{
+  border-radius: 10px;
+  margin-top: 100px;
+  width: 40px;
+  height: 100px;
+  text-align: center;
+  transition: transform 0.6s;
+  margin-left: -60px;
+  
+}
+.about-img img{
+  width: 400px;
+  height:620px;
+  border-radius: 8px;
+}
+
+.text2, .text3{
+  margin-top: -60px;
+}
